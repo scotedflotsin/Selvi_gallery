@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cameraLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Camera.CameraActivity">
+
+    <!-- Camera Preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter" />
+
+    <!-- Capture Button -->
+    <ImageView
+        android:id="@+id/captureButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="📷"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:padding="20dp"
+        android:src="@drawable/baseline_camera_alt_24"
+        android:elevation="6dp"
+        android:background="@drawable/camera_shutter" />
+
+    <!-- Flash Toggle Button -->
+    <ImageView
+        android:id="@+id/flashButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="⚡"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baseline_adjust_24"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:elevation="6dp"
+        android:background="@drawable/rounded_button" />
+
+    <!-- Switch Camera Button -->
+    <ImageView
+        android:id="@+id/switchButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="🔄"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:src="@drawable/baseline_autorenew_24"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:elevation="6dp"
+        android:background="@drawable/rounded_button" />
+
+</RelativeLayout>
